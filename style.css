@@ -1,0 +1,290 @@
+@font-face {
+    font-family: 'PromptLocal';
+    src: url(Prompt-Medium.ttf) format(truetype);
+}
+
+.navbar {
+    background-color: #00b4d8;
+    color: antiquewhite;
+    height: 100px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 0 60px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+}
+
+.logo {
+    width: 150px;
+    position: absolute; 
+    top: -20px;
+    left: 20px;
+    filter: drop-shadow(5px 5px 10px rgba(0, 0, 0, 0.5));
+}
+
+.menu-logo {
+    color: #E0E0E0;
+    font-size: 30px;
+    cursor: pointer;
+    user-select: none;
+    filter: drop-shadow(5px 5px 10px rgba(0, 0, 0, 0.5));
+}
+
+.menu {
+    background-color: #003566;
+    list-style: none;
+    padding: 0;
+    margin-top: 10px;
+    display: none;
+    position: absolute; top: 60px; left: 1235px;
+    text-align: center;
+    width: auto;
+    font-family: 'PromptLocal';
+    border-radius: 20px;
+    top: calc(100%+10px);
+    z-index: 999;
+}
+
+.menu li {
+    list-style: none;
+    margin: 10px 0;
+    width: 100%;
+}
+
+.menu li a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    display: block;
+    text-align: center;
+}
+
+.menu.show {
+    display: block;
+}
+
+.menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.menu a {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 5px;
+    background-color: #ffffff55;
+    border-radius: 10px;
+    color: #fff;
+    font-weight: normal;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.menu a:hover {
+    background-color: #ffffff55;
+    transform: scale(1.05)
+}
+
+input::placeholder {
+    font-size: .9rem;
+}
+
+input {
+    all: unset;
+    padding: 15px;
+    border-radius: 12px;
+    border: 2px solid transparent;
+    box-shadow: 0px 2px 2px 2px rgba(0, 0, 0, 0.5);
+    transition: border .3s ease-in-out;
+    margin-bottom: 20px;
+}
+
+input:focus {
+    border-color: #3a86ff;
+}
+
+.form {
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    flex-direction: column;
+    transform: translate(-50%, -50%);
+    gap: 20px;
+    display: flex;
+}
+
+.form input {
+    background-color: white;
+    font-family: 'PromptLocal';
+}
+
+.home {
+    font-size: 80px;
+    font-weight: bold;
+    color: white;
+    position: absolute;
+    left: 50%;
+    top: 25%;
+    transform: translate(-50%, -50%);
+    font-family: 'PromptLocal';
+    filter: drop-shadow(5px 5px 10px rgba(0, 0, 0, 0.5));
+}
+
+.login-bottom {
+    text-align: center;
+    margin: 20px auto;
+}
+
+.login-bottom a {
+    text-decoration: none;
+    color: white;
+    font-size: 25px;
+    padding: 12px;
+    background-color: #219ebc;
+    border-radius: 20px;
+    font-weight: bold;
+    font-family: 'promptLocal';
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+    width: 100px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    left: 50%;
+    top: 80%;
+    transform: translate(-50%, -50%);
+    transition: all 0.3s ease;
+}
+
+.login-bottom a:hover {
+    background-color: #219ebc;
+    transform: translate(-50%, -50%) scale(1.05);
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.4);
+}
+
+body {
+    background-color: #0f172a;
+    margin: 0;
+    padding-top: 100px;
+}
+
+.diamond {
+    width: 250px;
+    height: 70px;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    background-color: #FAF9F6;
+    border: 2px solid transparent;
+    border-radius: 15px;
+    transition: all 0.3s ease;
+    box-shadow: 0 0 0 rgba(0 ,0 ,0 ,0);
+}
+
+.diamond:hover {
+    transform: scale(1.1);
+    border: 2px solid #3a86ff;
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.3);
+}
+
+.diamond-img {
+    width: 80px;
+    height: 80px;
+    object-fit: contain;
+}
+
+.diamond-info {
+    margin: 0;
+    line-height: 2;
+    color: blue;
+    margin-left: 10px;
+}
+.diamond-info p {
+    margin: 0;
+    font-size: 16px;
+    font-family: 'PromptLocal';
+    font-weight: bold;
+}
+
+.diamond-amount {
+    font-size: 20px;
+    font-weight: bold;
+    color: #3a86ff;
+    font-family: 'PromptLocal';
+}
+
+.baht-amount {
+    font-size: 14px;
+    color: black;
+    font-family: 'PromptLocal';
+}
+
+.diamond-grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    position: absolute;
+    right: 20px;
+    top: 50px;
+}
+
+.info-termgame {
+    color: red;
+    background-color: white;
+    border-radius: 20px;
+    width: 400px;
+    height: 90px;
+    text-align: center;
+    font-size: 50px;
+    font-weight: bold;
+    font-family: 'PromptLocal';
+    position: absolute;
+    top: 20px;
+    left: 50px;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.3);
+}
+
+.uid-img {
+    border: 3px solid #ffffff;
+    position: absolute;
+    top: 200px;
+    left: 50px;
+}
+
+.password-reset {
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 15px;
+    font-family: 'PromptLocal';
+    gap: 20px;
+    position: absolute;
+    left: 530px;
+    top: 65%;
+    transform: (-50%, -50%);
+}
+
+.pw-one {
+    color: white;
+    font-size: 15px;
+    font-family: 'PromptLocal';
+}
+
+.pw-two {
+    color: white;
+    font-size: 15px;
+    font-family: 'PromptLocal';
+    transition: color 0.3s ease;
+}
+
+.pw-two:hover {
+    color: #3a86ff;
+}
